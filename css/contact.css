@@ -1,0 +1,113 @@
+* {
+    margin: 0; /* Margjina e jashtme */
+    padding: 0; /* Mbushja e brendshme */
+    box-sizing: border-box; /* Kufiri i kutisë */
+    font-family: 'Roboto', sans-serif; /* Familja e fontit */
+}
+body {
+    min-height: 100vh; /* Gjatësia minimale e trupit */
+    background: #454545; /* Ngjyra e sfondit */
+    margin-top: 80px; /* Margjina e sipërme */
+    color: white; /* Ngjyra e tekstit */
+}
+
+.header {
+    position: fixed; /* Pozicioni i fiksuar */
+    top : 0; /* Pozicioni lart */
+    left : 0; /* Pozicioni majtas */
+    width: 100%; /* Gjerësia */
+    padding: 10px 100px; /* Mbushja */
+    background: transparent; /* Sfondi transparent */
+    display: flex; /* Shfaqja e elementeve si rresht */
+    justify-content: space-between; /* Rregullimi i hapësirës midis elementeve */
+    align-items: center; /* Qendrimi i elementeve në mes */
+    z-index: 100; /* Indeksi i thellësisë */
+}
+
+.logo{
+    font-size: 32px; /* Madhësia e shkrimit */
+    color: antiquewhite; /* Ngjyra */
+    text-decoration: none; /* Dekorimi i tekstit */
+    font-weight: 700; /* Pesha e shkrimit */
+}
+
+.navbar a{
+    font-size: 18px; /* Madhësia e shkrimit */
+    color: antiquewhite; /* Ngjyra */
+    text-decoration: none; /* Dekorimi i tekstit */
+    font-weight: 500; /* Pesha e shkrimit */
+    margin-left: 40px; /* Margjina majtas */
+    transition: color 0.3s ease; /* Tranzicioni i ngjyrës */
+}
+nav a:hover{
+    color: #454545; /* Ngjyra kur kursori kalon mbi të */
+}
+h1 {
+    text-align: center; /* Qendrimi i tekstit në mes */
+    font-size: 36px; /* Madhësia e shkrimit */
+    margin-top: 20px; /* Margjina e sipërme */
+}
+.content-container {
+    max-width: 800px; /* Gjerësia maksimale */
+    margin: 20px auto; /* Margjina e sipërme dhe poshtme automatike */
+    padding: 20px; /* Mbushja */
+    background-color: #fff; /* Ngjyra e sfondit */
+    border-radius: 8px; /* Rrezeza e kornizës */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hijeshkrimi */
+    text-align: center; /* Qendrimi i tekstit në mes */
+}
+
+h2 {
+    color: #454545; /* Ngjyra e tekstit */
+    margin-bottom: 20px; /* Margjina poshtë */
+}
+
+p {
+    color: #333; /* Ngjyra e tekstit */
+    line-height: 1.6; /* Lartësia e rreshtit */
+    margin-bottom: 20px; /* Margjina poshtë */
+}
+
+form {
+    max-width: 400px; /* Gjerësia maksimale */
+    margin: 0 auto; /* Margjina e sipërme dhe poshtme automatike */
+    text-align: left; /* Qendrimi i tekstit majtas */
+}
+
+label {
+    display: block; /* Shfaqja e elementit si bllok */
+    margin-bottom: 8px; /* Margjina poshtë */
+    color: #333; /* Ngjyra e tekstit */
+}
+
+input, textarea {
+    width: 100%; /* Gjerësia */
+    padding: 10px; /* Mbushja */
+    margin-bottom: 16px; /* Margjina poshtë */
+    border: 1px solid #ddd; /* Korniza */
+    border-radius: 4px; /* Rrezeza e kornizës */
+    box-sizing: border-box; /* Kufiri i kutisë */
+}
+
+button {
+    background-color: #454545; /* Ngjyra e sfondit */
+    color: white; /* Ngjyra e tekstit */
+    padding: 12px 20px; /* Mbushja */
+    border: none; /* Pa kornizë */
+    border-radius: 4px; /* Rrezeza e kornizës */
+    cursor: pointer; /* Kursori */
+    font-size: 16px; /* Madhësia e shkrimit */
+}
+
+button:hover {
+    background-color: #454545; /* Ngjyra kur kursori kalon mbi të */
+}
+footer {
+    background-color: #ffffff; /* Ngjyra e sfondit */
+    color: white; /* Ngjyra e tekstit */
+    text-align: center; /* Qendrimi i tekstit në mes */
+    padding: 10px; /* Mbushja */
+  }
+footer p {
+    color: #454545; /* Ngjyra e tekstit */
+}

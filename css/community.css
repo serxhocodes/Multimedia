@@ -1,0 +1,113 @@
+* {
+    margin: 0; /* Margjina: 0 */
+    padding: 0; /* Mbushje: 0 */
+    box-sizing: border-box; /* Kuti: border-box */
+    font-family: 'Roboto', sans-serif; /* Familja e fontit: 'Roboto', sans-serif */
+}
+body {
+    min-height: 100vh; /* Gjatësia minimale: 100vh */
+    background: #454545; /* Sfondi: #454545 */
+    margin-top: 80px; /* Margjina lart: 80px */
+    color: white; /* Ngjyra: e bardhë */
+}
+
+.header {
+    position: fixed; /* Pozicioni: i fiksuar */
+    top : 0; /* Lart: 0 */
+    left : 0; /* Majtas: 0 */
+    width: 100%; /* Gjerësia: 100% */
+    padding: 10px 100px; /* Mbushje: 10px 100px */
+    background: transparent; /* Sfondi: transparent */
+    display: flex; /* Shfaqje: flex */
+    justify-content: space-between; /* Justifikim: ndërrejte */
+    align-items: center; /* Përqendrim: qendër */
+    z-index: 100; /* Indeksi Z: 100 */
+}
+
+.logo{
+    font-size: 32px; /* Madhësia e fontit: 32px */
+    color: antiquewhite; /* Ngjyra: antiquewhite */
+    text-decoration: none; /* Dekorimi i tekstit: pa dekorim */
+    font-weight: 700; /* Pesha e fontit: 700 */
+}
+
+.navbar a{
+    font-size: 18px; /* Madhësia e fontit: 18px */
+    color: antiquewhite; /* Ngjyra: antiquewhite */
+    text-decoration: none; /* Dekorimi i tekstit: pa dekorim */
+    font-weight: 500; /* Pesha e fontit: 500 */
+    margin-left: 40px; /* Margjina majtas: 40px */
+    transition: color 0.3s ease; /* Tranzicioni: ngjyra 0.3s lehtësi */
+}
+nav a:hover{
+    color: #454545; /* Ngjyra: #454545 */
+}
+h1 {
+    text-align: center; /* Përqendrimi i tekstit: qendër */
+    font-size: 36px; /* Madhësia e fontit: 36px */
+    margin-top: 20px; /* Margjina lart: 20px */
+}
+.events-container {
+    max-width: 800px; /* Gjerësia maksimale: 800px */
+    margin: 20px auto; /* Margjina: 20px auto */
+    padding: 20px; /* Mbushje: 20px */
+    background-color: #fff; /* Sfondi: #fff */
+    border-radius: 8px; /* Rreze: 8px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hijeshkrimi: 0 0 10px rgba(0, 0, 0, 0.1) */
+    text-align: center; /* Përqendrimi i tekstit: qendër */
+}
+
+.event {
+    margin-bottom: 20px; /* Margjina poshtë: 20px */
+    padding: 20px; /* Mbushje: 20px */
+    background-color: #fff; /* Sfondi: #fff */
+    border-radius: 8px; /* Rreze: 8px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hijeshkrimi: 0 2px 5px rgba(0, 0, 0, 0.1) */
+    transition: transform 0.3s ease; /* Tranzicioni: transform 0.3s lehtësi */
+}
+
+.event:hover {
+    transform: scale(1.05); /* Transformimi: shkallëzim(1.05) */
+}
+
+.event img {
+    max-width: 100%; /* Gjerësia maksimale: 100% */
+    height: auto; /* Lartësia: auto */
+    border-radius: 8px; /* Rreze: 8px */
+    margin-bottom: 10px; /* Margjina poshtë: 10px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hijeshkrimi: 0 4px 8px rgba(0, 0, 0, 0.1) */
+}
+
+.event-details {
+    text-align: center; /* Përqendrimi i tekstit: qendër */
+}
+
+.event h2 {
+    color: #454545; /* Ngjyra: #454545 */
+}
+
+.event p {
+    color: #666; /* Ngjyra: #666 */
+}
+
+.event-link {
+    display: inline-block; /* Shfaqje: inline-block */
+    margin-top: 20px; /* Margjina lart: 20px */
+    padding: 10px 20px; /* Mbushje: 10px 20px */
+    background-color: #454545; /* Sfondi: #454545 */
+    color: #fff; /* Ngjyra: e bardhë */
+    text-decoration: none; /* Dekorimi i tekstit: pa dekorim */
+    border-radius: 8px; /* Rreze: 8px */
+    transition: background-color 0.3s ease; /* Tranzicioni: ngjyra e sfondit 0.3s lehtësi */
+}
+
+.event-link:hover {
+    background-color: #454545; /* Sfondi: #454545 */
+}
+    /* Footer */
+footer {
+    background-color: #333; /* Sfondi: #333 */
+    color: white; /* Ngjyra: e bardhë */
+    text-align: center; /* Përqendrimi i tekstit: qendër */
+    padding: 10px; /* Mbushje: 10px */
+  }

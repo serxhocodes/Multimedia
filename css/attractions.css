@@ -1,0 +1,147 @@
+* {
+    margin: 0; /* Margjina: 0 */
+    padding: 0; /* Mbushje: 0 */
+    box-sizing: border-box; /* Kutiza: border-box */
+    font-family: 'Roboto', sans-serif; /* Familja e fontit: 'Roboto', sans-serif */
+}
+body {
+    min-height: 100vh; /* Gjatësia minimale: 100vh */
+    background: #454545; /* Sfondi: #454545 */
+    margin-top: 80px; /* Margjina lart: 80px */
+    color: white; /* Ngjyra: e bardhë */
+}
+
+.header {
+    position: fixed; /* Pozicioni: i fiksuar */
+    top : 0; /* Lart: 0 */
+    left : 0; /* Majtas: 0 */
+    width: 100%; /* Gjerësia: 100% */
+    padding: 10px 100px; /* Mbushje: 10px 100px */
+    background: transparent; /* Sfondi: transparent */
+    display: flex; /* Shfaqje: flex */
+    justify-content: space-between; /* Justifikimi: hapësirë-mes */
+    align-items: center; /* Përqendrimi: qendër */
+    z-index: 100; /* Indeksi Z: 100 */
+}
+
+.logo{
+    font-size: 32px; /* Madhësia e fontit: 32px */
+    color: antiquewhite; /* Ngjyra: antiquewhite */
+    text-decoration: none; /* Dekorimi i tekstit: pa dekorim */
+    font-weight: 700; /* Pesha e fontit: 700 */
+}
+
+.navbar a{
+    font-size: 18px; /* Madhësia e fontit: 18px */
+    color: antiquewhite; /* Ngjyra: antiquewhite */
+    text-decoration: none; /* Dekorimi i tekstit: pa dekorim */
+    font-weight: 500; /* Pesha e fontit: 500 */
+    margin-left: 40px; /* Margjina majtas: 40px */
+    transition: color 0.3s ease; /* Tranzicioni: ngjyra 0.3s lehtësi */
+}
+nav a:hover{
+    color: #ca2222; /* Ngjyra: #ca2222 */
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent; /* Sfondi: transparent */
+    width: 400px; /* Gjerësia: 400px */
+    height: 300px; /* Lartësia: 300px */
+    border: 1px solid #f1f1f1; /* Kufiri: 1px solid #f1f1f1 */
+    perspective: 1000px; /* Perspektiva: 1000px */
+    margin: 20px auto; /* Margjina: 20px auto */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative; /* Pozicioni: i lidhur */
+    width: 100%; /* Gjerësia: 100% */
+    height: 100%; /* Lartësia: 100% */
+    text-align: center; /* Qëndrimi i tekstit: qendër */
+    transition: transform 0.8s; /* Tranzicioni: transform 0.8s */
+    transform-style: preserve-3d; /* Stili i transformimit: preserve-3d */
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Transformimi: rotateY(180deg) */
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute; /* Pozicioni: absolut */
+    width: 100%; /* Gjerësia: 100% */
+    height: 100%; /* Lartësia: 100% */
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden; /* Sfondi i prapme: i fshehur */
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb; /* Sfondi: #bbb */
+    color: black; /* Ngjyra: e zezë */
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #454545; /* Sfondi: #454545 */
+    color: white; /* Ngjyra: e bardhë */
+    transform: rotateY(180deg); /* Transformimi: rotateY(180deg) */
+  }
+  main {
+    padding-top: 80px; /* Mbushje lart: 80px */
+    margin: 0 auto; /* Margjina: 0 auto */
+}
+h1 {
+    text-align: center; /* Qëndrimi i tekstit: qendër */
+    font-size: 36px; /* Madhësia e fontit: 36px */
+    margin-top: 20px; /* Margjina lart: 20px */
+}
+/* Style the audio container */
+.audio-container {
+    margin-top: 20px; /* Margjina lart: 20px */
+    text-align: center; /* Qëndrimi i tekstit: qendër */
+}
+
+.audio-container p {
+    font-size: 18px; /* Madhësia e fontit: 18px */
+    color: white; /* Ngjyra: e bardhë */
+    margin-bottom: 10px; /* Margjina poshtë: 10px */
+}
+
+/* Style the audio player */
+audio {
+    width: 100%; /* Gjerësia: 100% */
+    max-width: 300px; /* Gjerësia maksimale: 300px */
+    margin: 0 auto; /* Margjina: 0 auto */
+}
+
+/* Style audio player controls */
+audio::-webkit-media-controls {
+    background-color: #333; /* Sfondi: #333 */
+    border-radius: 8px; /* Rrezezimi i kufirit: 8px */
+}
+
+/* Style audio player progress bar and volume control */
+audio::-webkit-media-slider-thumb {
+    background-color: #ca2222; /* Sfondi: #ca2222 */
+}
+
+.linkaudio {
+    text-align: center; /* Qëndrimi i tekstit: qendër */
+    font-size: 24px; /* Madhësia e fontit: 24px */
+    margin-top: 20px; /* Margjina lart: 20px */
+}
+.linkaudio a{
+    color: rgb(137, 132, 132); /* Ngjyra: rgb(137, 132, 132) */
+    text-decoration: none; /* Dekorimi i tekstit: pa dekorim */
+    font-weight: 500; /* Pesha e fontit: 500 */
+    transition: color 0.3s ease; /* Tranzicioni: ngjyra 0.3s lehtësi */
+}
+    /* Footer */
+footer {
+    background-color: #333; /* Sfondi: #333 */
+    color: white; /* Ngjyra: e bardhë */
+    text-align: center; /* Qëndrimi i tekstit: qendër */
+    padding: 10px; /* Mbushje: 10px */
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Kodimi i karaktereve -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Shkalla fillestare e pamjes -->
+    <title>Shkodra</title> <!-- Titulli i faqes -->
+    <link rel="stylesheet" href="css/index.css"> <!-- Lidhja me stilin CSS -->
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Shkodra</a> <!-- Lidhja me faqen kryesore -->
+
+        <nav class="navbar">
+            <a href="localAttractions.html">Atdheu</a> <!-- Lidhja me faqen e atraksioneve lokale -->
+            <a href="event.html">Ngjarjet e Komunitetit</a> <!-- Lidhja me faqen e ngjarjeve komunitare -->
+            <a href="about.html">Rreth Nesh</a> <!-- Lidhja me faqen "Rreth Nesh" -->
+            <a href="contact.html">Kontakt</a> <!-- Lidhja me faqen e kontaktit -->
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mirë se vini në Shkodër</h1> <!-- Titulli kryesor -->
+        <section id="video-section">
+        <div class="video-container">
+            <video width="320" height="240" autoplay loop muted poster="img/shkodra1.jpeg">
+                <source src="video/shkodra_vidjo.mp4" type="video/mp4">
+                Shfletuesi juaj nuk e mbështet etiketën e videove.
+            </video>
+            <video width="320" height="240" autoplay loop muted poster="img/shkodra2.jpg" start="end">
+                <source src="video/shkodra_vidjo_2.mp4" type="video/mp4">
+                Shfletuesi juaj nuk e mbështet etiketën e videove.
+            </video>
+        </section> 
+        </div>
+        <section class="big-text">
+            <h2>Shkodra</h2> <!-- Titulli i seksionit -->
+            <p>Shkodra një qytet ku historia, kultura dhe bukuria natyrore bashkohen për të krijuar një përvojë vërtet unike. Ngulitur në zemrën e Shqipërisë, Shkodra shërben si dëshmi e qëndrueshme e trashëgimisë së pasur të kombit tonë.</p> <!-- Paragrafi 1 -->
+            <p>Gjatë eksplorimit të Shkodrës, do të hasni muret e lashta të Kalasë së Rozafës, që rrezatojnë me tregime të shekujve të kaluar. Liqeni i Shkodrës, që ndriçon në diell, reflekton qetësinë që përcakton qytetin tonë. Ecni nëpër rrugët e gjallë të qendrës së qytetit, ku historia flet nga kalldrëmet, dhe ngrohtësia e komunitetit tonë rezonon.</p> <!-- Paragrafi 2 -->
+            <p>Shkodra nuk është vetëm një qytet; është një kanvas i gjallë i pikturuar me shtrime të kulturave të ndryshme, i kapur në Muzeun Kombëtar të Fotografisë Marubi. Festat tona, si Karnevali i Venecias në Shkodër, sjellin rrugët në jetë, duke festuar frymën e popullit tonë.</p> <!-- Paragrafi 3 -->
+            <p>Shijoni kuzhinën tonë lokale, një udhëtim kulinar nëpër shije që janë përsosur gjatë brezave. Pavarësisht nëse ecni nëpër tregjet e zhurmshme ose shijoni qetësinë e parqeve tona, Shkodra ju fton të shijoni çdo moment. </p> <!-- Paragrafi 4 -->
+            <p>Bashkohuni me ne në pranimin e të kaluarës, festimin e tashmes dhe shikimin e një të ardhmeje të mbushur me përvoja të përbashkëta. Shkodra ju mirëpret me duar të hapura, duke ju ftuar të zbuloni zemrën dhe shpirtin e Shqipërisë në çdo cep të qytetit tonë. Shijoni udhëtimin tuaj në Shkodër - ku çdo hap është një hap në histori, kulturë dhe mrekullitë natyrore!</p> <!-- Paragrafi 5 -->
+        </section>
+        <!-- Kontejneri i slajdave -->
+        <div class="slideshow-container">
+
+            <!-- Imazhe me gjatësi të plotë me numër dhe tekstin e titullit -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/shkodra5.jpg" style="width:100%">
+            <div class="text">Tekst i titullit</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/shkodra4.jpeg" style="width:100%">
+            <div class="text">Titulli Dy</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/shkodra3.jpg" style="width:100%">
+            <div class="text">Titulli Tre</div>
+            </div>
+        
+            <!-- Butonat e vijuesit dhe të mëparshmit -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- Pikat/rrethoret -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Faqja e Shkodrës. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+    <script src="javascript/index.js"></script> <!-- Lidhja me skedarin JavaScript -->
+</body>
+</html>
